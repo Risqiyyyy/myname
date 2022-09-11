@@ -7,6 +7,8 @@
     <title>Portofolio</title>
     <link href="dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <!-- Header -->
@@ -35,6 +37,9 @@
                         <li class="group">
                             <a href="#education" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Education</a>
                         </li>
+                        <li class="group">
+                            <a href="#fav-film" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">My Movie</a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -58,6 +63,7 @@
                 <div class="relative mt-10 lg:mt-9 lg:right-0">
                     <img src="dist/img/killua.png" alt="killua" class="max-w-full mx-auto"/>
                 </div>
+                <h3>*This web is only mobile view</h3>
             </div>
         </div>
     </div>
@@ -148,10 +154,34 @@
 
         </div>
     </section>
-    <!-- Portolio end -->
+    <!-- end education -->
+
+    <!-- my fav film -->
+    <section id="fav-film" class="pt-20 pb-16 bg-slate-200">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold tex-lg text-primary mb-2">MY FAV FILM</h4>
+                    <p class="font-medium text-md text-secondary">
+                    </p>
+                    <div class="card w-50 bg-base-100 shadow-xl image-full">
+                        <figure><img src="dist/img/hunter.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title text-center">HUNTER X HUNTER</h2>
+                          <p></p>
+                          <div class="card-actions justify-end">
+                            <a class="btn btn-primary" href="https://www.bilibili.tv/id/play/37603?bstar_from=bstar-web.search-result.0.0">Watch Now</a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end fav film -->
+
 
     <!-- Footer -->
-    
 <footer class="p-4 text-center bg-slate-400 rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
     
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
