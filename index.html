@@ -38,7 +38,7 @@
                             <a href="#education" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Education</a>
                         </li>
                         <li class="group">
-                            <a href="#fav-film" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">My Movie</a>
+                            <a href="#fav-anime" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">My Fav Anime</a>
                         </li>
                     </ul>
                 </nav>
@@ -110,7 +110,7 @@
     <!-- Tentang saya end -->
 
     <!-- Education-->
-    <section id="education" class="pt-36 pb-16 bg-slate-100">
+    <section id="education" class="pt-36 pb-16 bg-slate-150">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
@@ -155,30 +155,111 @@
         </div>
     </section>
     <!-- end education -->
-
-    <!-- my fav film -->
-    <section id="fav-film" class="pt-20 pb-16 bg-slate-200">
+    
+    <!-- fav -->
+    <section id="fav-anime" class="pt-20 pb-16 bg-slate-200">
         <div class="container">
             <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold tex-lg text-primary mb-2">MY FAV FILM</h4>
-                    <p class="font-medium text-md text-secondary">
-                    </p>
-                    <div class="card w-50 bg-base-100 shadow-xl image-full">
-                        <figure><img src="dist/img/hunter.jpg" alt="Shoes" /></figure>
-                        <div class="card-body">
-                          <h2 class="card-title text-center">HUNTER X HUNTER</h2>
-                          <p></p>
-                          <div class="card-actions justify-end">
-                            <a class="btn btn-primary" href="https://www.bilibili.tv/id/play/37603?bstar_from=bstar-web.search-result.0.0">Watch Now</a>
-                          </div>
-                        </div>
-                      </div>
+                <div class="max-w-xl mx-auto text-center mb-16" id="item1" >
+                    <h4 class="font-semibold tex-lg text-primary mb-2">MY FAV ANIME</h4>
+                    <div id="indicators-carousel" class="relative" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0" data-carousel-item="active">
+            <div class="card w-50 bg-base-100 shadow-xl image-full">
+                <figure><img src="dist/img/hunter.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-center">HUNTER X HUNTER</h2>
+                  <br>
+                  <div class="card-actions justify-center">
+                    <a class="btn btn-primary" href="https://www.bilibili.tv/id/play/37603?bstar_from=bstar-web.search-result.0.0">Watch Now</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
+            <div class="card w-50 bg-base-100 shadow-xl image-full">
+                <figure><img src="dist/img/deathnote.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-center">DeathNote</h2>
+                  <br>
+                  <div class="card-actions justify-center">
+                    <a class="btn btn-primary" href="https://www.bilibili.tv/id/video/2008487062?bstar_from=bstar-web.search-result.0.0">Watch Now</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform" data-carousel-item="">
+            <div class="card w-50 bg-base-100 shadow-xl image-full">
+                <figure><img src="dist/img/naruto.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-center">Naruto</h2>
+                  <br>
+                  <div class="card-actions justify-center">
+                    <a class="btn btn-primary" href="https://www.bilibili.tv/id/play/1005144?bstar_from=bstar-web.search-result.0.0">Watch Now</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform" data-carousel-item="">
+            <div class="card w-50 bg-base-100 shadow-xl image-full">
+                <figure><img src="dist/img/kimetsu.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-center">Kimetsu No Yaiba</h2>
+                  <br>
+                  <div class="card-actions justify-center">
+                    <a class="btn btn-primary" href="https://www.bilibili.tv/id/play/34580">Watch Now</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+            <div class="card w-50 bg-base-100 shadow-xl image-full">
+                <figure><img src="dist/img/jujutsu.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-center">Jujutsu Kaisen</h2>
+                  <br>
+                  <div class="card-actions justify-center">
+                    <a class="btn btn-primary" href="https://www.bilibili.tv/id/play/37738?bstar_from=bstar-web.anime-tab.top-hits.all">Watch Now</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
                 </div>
             </div>
         </div>
     </section>
-    <!-- end fav film -->
+    <!-- edn fav -->
+
 
 
     <!-- Footer -->
